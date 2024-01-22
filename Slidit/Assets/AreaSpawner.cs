@@ -18,7 +18,7 @@ public class AreaSpawner : MonoBehaviour
     [SerializeField] private float spawnrateIncreaseAmount = 0.1f;
 
 
-    private void Start()
+    public void StartSpawning()
     {
         StartCoroutine(SpawnEnemies());
         StartCoroutine(SpawnBombs());

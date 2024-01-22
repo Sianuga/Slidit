@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject playButton;
+
+    public void StartGame()
     {
-        
+        playButton.SetActive(false);
+        FindObjectOfType<FireballController>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+        FindObjectOfType<AreaSpawner>().StartSpawning();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RestartGame()
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }

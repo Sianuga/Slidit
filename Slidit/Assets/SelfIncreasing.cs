@@ -8,6 +8,8 @@ public class SelfIncreasing : MonoBehaviour
 
     [SerializeField] private float increaseRate = 0.1f;
 
+    [SerializeField] private bool isBomb = false;
+
 
     private void Start()
     {
@@ -23,5 +25,16 @@ public class SelfIncreasing : MonoBehaviour
         }
 
         transform.localScale = new Vector3(maxSize, maxSize, 0);
+
+        StartCoroutine(Explode());
+    }
+
+    private IEnumerator Explode()
+    {
+        if (isBomb)
+        {
+            yield return new WaitForSeconds(1f);
+            Destroy(gameObject);
+        }
     }
 }
