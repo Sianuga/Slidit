@@ -27,6 +27,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bat"))
         {
+            Destroy(collision.gameObject);
             score += 10;
             scoreText.text = score.ToString();
         }

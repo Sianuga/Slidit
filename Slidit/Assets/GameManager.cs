@@ -17,5 +17,6 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 }
