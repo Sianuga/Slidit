@@ -167,4 +167,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSize: 5
   increaseRate: 0.05
-  isBomb: 0
+  isBomb: 1
