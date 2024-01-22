@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private int scorePerSecond = 1;
     [SerializeField] private TMPro.TextMeshProUGUI scoreText;
 
-    private void Start()
+    public void StartAutoScore()
     {
         StartCoroutine(IncreaseScore());
     }
@@ -25,7 +25,7 @@ public class ScoreManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Bat"))
         {
             score += 10;
             scoreText.text = score.ToString();

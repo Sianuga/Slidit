@@ -26,19 +26,25 @@ public class HealthManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bomb"))
         {
-            health--;
-            hearts[health].sprite = emptyHeart;
             Destroy(collision.gameObject);
+            DecreaseHealth();
 
-            if (health <= 0)
-            {
-                stopGame();
-                openPlayMenu();
-                Destroy(gameObject);
-            }
         }
 
 
+    }
+
+    public void DecreaseHealth()
+    {
+        health--;
+        hearts[health].sprite = emptyHeart;
+
+        if (health <= 0)
+        {
+            stopGame();
+            openPlayMenu();
+            Destroy(gameObject);
+        }
     }
 
     private void stopGame()

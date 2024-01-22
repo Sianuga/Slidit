@@ -36,5 +36,11 @@ public class SelfIncreasing : MonoBehaviour
             yield return new WaitForSeconds(1f);
             Destroy(gameObject);
         }
+        else
+        {
+            yield return new WaitForSeconds(3f);
+            FindObjectOfType<HealthManager>().DecreaseHealth();
+            Destroy(gameObject);
+        }
     }
 }

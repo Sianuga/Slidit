@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
         playButton.SetActive(false);
         FindObjectOfType<FireballController>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         FindObjectOfType<AreaSpawner>().StartSpawning();
+        FindObjectOfType<ScoreManager>().StartAutoScore();
     }
 
     public void RestartGame()

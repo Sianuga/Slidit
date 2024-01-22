@@ -366,10 +366,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 215176261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.6149974, y: -189.2}
-  m_SizeDelta: {x: 188.77, y: 63.51}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 5.61499, y: 87}
+  m_SizeDelta: {x: -611.23, y: 63.509995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175656417
 MonoBehaviour:
@@ -655,10 +655,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 215176261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51, y: -191}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -51, y: 85.20001}
+  m_SizeDelta: {x: -700, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &370145904
 MonoBehaviour:
@@ -1184,12 +1184,12 @@ MonoBehaviour:
   - {fileID: 4609968263230115628, guid: 364b24ca3f24d3b44865a336192bfc24, type: 3}
   obstacleObjects:
   - {fileID: 3192194287950241698, guid: 4e2f44146e77b4143937f46fe7e7cf42, type: 3}
-  bombSpawnDelay: 1
-  enemySpawnDelay: 1
-  enemySpawnRand: 0.2
-  bombSpawnRand: 0.2
-  enemySpawnRateMin: 2
-  spawnrateIncreaseDelay: 10
+  bombSpawnDelay: 10
+  enemySpawnDelay: 5
+  enemySpawnRand: 0.5
+  bombSpawnRand: 1
+  enemySpawnRateMin: 0.5
+  spawnrateIncreaseDelay: 5
   spawnrateIncreaseAmount: 0.1
 --- !u!61 &817240736
 BoxCollider2D:
@@ -1371,6 +1371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   sprite: {fileID: 349554425}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  extuinguishedColor: {r: 0.05490196, g: 0.05490196, b: 0.05490196, a: 0.627451}
 --- !u!50 &1311371561
 Rigidbody2D:
   serializedVersion: 4
@@ -1397,7 +1399,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 6
+  m_Constraints: 7
 --- !u!58 &1311371562
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1880,10 +1882,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 215176261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -191}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 5, y: 85.20001}
+  m_SizeDelta: {x: -700, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825684853
 MonoBehaviour:
@@ -1955,10 +1957,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 215176261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 61, y: -191}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 61, y: 85.20001}
+  m_SizeDelta: {x: -700, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2064680442
 MonoBehaviour:
